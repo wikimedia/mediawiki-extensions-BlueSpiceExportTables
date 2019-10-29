@@ -52,8 +52,7 @@
 				"bs-exporttables-menu",
 				"bs-exporttables-menu-csv",
 				"bs-exporttables-menu-xls",
-				"bs-exporttables-menu-xlsx",
-				"bs-exporttables-exportable"
+				"bs-exporttables-menu-xlsx"
 			]
 		},
 		"ext.bluespice.exportTables.CRUDGridPanel.button.styles": {
@@ -73,8 +72,7 @@
 				"bs-exporttables-menu",
 				"bs-exporttables-menu-csv",
 				"bs-exporttables-menu-xls",
-				"bs-exporttables-menu-xlsx",
-				"bs-exporttables-exportable"
+				"bs-exporttables-menu-xlsx"
 			]
 		},
 		"ext.bluespice.exportTables.visualEditorPlugin": {
