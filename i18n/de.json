@@ -1,11 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patric Wirth <wirth@hallowelt.com>"
+			"Patric Wirth"
 		]
 	},
 	"bs-exporttables-extension-description": "Ermöglicht den Export von Tabellen zu Excel oder CSV",
-	"prefs-ExportTables": "ExportTables",
 	"bs-exporttables-menu": "Tabelle exportieren",
 	"bs-exporttables-menu-csv": "Kommaseparierte Liste (CSV)",
 	"bs-exporttables-menu-xls": "Microsoft Office Excel 2003 (XLS)",
