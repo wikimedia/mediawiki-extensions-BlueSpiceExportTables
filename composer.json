@@ -1,0 +1,12 @@
+{
+	"name": "bluespice/exporttables",
+	"type": "mediawiki-extension",
+	"description": "Allows export of tables to Excel and CSV",
+	"license": "GPL-3.0-only",
+	"require": {
+		"composer/installers": "~1.0"
+	},
+	"extra": {
+		"installer-name": "BlueSpiceExportTables"
+	}
+}
