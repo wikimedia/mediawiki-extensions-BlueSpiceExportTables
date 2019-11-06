@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"    Patric Wirth <wirth@hallowelt.com>"
+			"	Patric Wirth"
 		]
 	},
 	"bs-exporttables-extension-description": "Allows export of tables to Excel and CSV",
