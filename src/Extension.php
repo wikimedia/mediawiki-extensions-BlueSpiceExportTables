@@ -34,4 +34,5 @@ namespace BlueSpice\ExportTables;
  * @package BlueSpiceExportTables
  * @subpackage ExportTables
  */
-class Extension extends \BlueSpice\Extension {}
+class Extension extends \BlueSpice\Extension {
+}
