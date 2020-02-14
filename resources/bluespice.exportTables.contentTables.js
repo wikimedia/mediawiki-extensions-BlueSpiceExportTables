@@ -1,4 +1,4 @@
-(function(mw, $, bs){
+( function( mw, $, bs, d ){
 
 	function _makeHTMLTableProvider( element ) {
 		return {
@@ -10,7 +10,7 @@
 		};
 	}
 
-	$(document).on( 'contextmenu', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function( e ) {
+	$( d ).on( 'contextmenu', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function( e ) {
 		if( e.ctrlKey ) {
 			return true;
 		}
@@ -28,11 +28,11 @@
 		return false;
 	});
 
-	$(document).on( 'mouseover', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function( e ) {
+	$( d ).on( 'mouseover', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function( e ) {
 		$(this).addClass( 'bs-et-highlight' );
 	});
-	$(document).on( 'mouseout', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function( e ) {
+	$( d ).on( 'mouseout', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function( e ) {
 		$(this).removeClass( 'bs-et-highlight' );
 	});
 
-})( mediaWiki, jQuery, blueSpice);
+} )( mediaWiki, jQuery, blueSpice, document );
