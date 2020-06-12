@@ -30,7 +30,7 @@ bs.exptbl.ui.plugin.ExportableOption.prototype.getValues = function( values ) {
 
 bs.exptbl.ui.plugin.ExportableOption.prototype.getSetupProcess = function( parentProcess, data ) {
 	parentProcess.next( function(){
-		var tableNode = this.component.getFragment().getSelection().getTableNode(),
+		var tableNode = this.component.getFragment().getSelection().getTableNode( this.component.getFragment().document ),
 			exportable = !!tableNode.getAttribute( 'exportable' );
 
 		this.component.exportableToggle.setValue( exportable );
