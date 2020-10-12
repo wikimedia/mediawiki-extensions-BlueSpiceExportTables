@@ -11,8 +11,8 @@
 	"requires": {
 		"MediaWiki": ">= 1.35.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 3.3",
-			"BlueSpiceUEModuleTable2Excel": ">= 3.3"
+			"BlueSpiceFoundation": ">= 4.0",
+			"BlueSpiceUEModuleTable2Excel": ">= 4.0"
 		}
 	},
 	"type": "bluespice",
