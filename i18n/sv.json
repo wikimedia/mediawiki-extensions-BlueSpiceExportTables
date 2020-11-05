@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Pyscowicz",
 			"Sabelöga"
 		]
 	},
-	"bs-exporttables-ve-exportable-option": "Exporterbar"
+	"bs-exporttables-ve-exportable-option": "Exporterbar",
+	"bs-exporttables-menu": "Exportera tabell"
 }
