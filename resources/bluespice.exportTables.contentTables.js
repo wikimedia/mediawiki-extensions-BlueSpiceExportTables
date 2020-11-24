@@ -15,6 +15,17 @@
 			return true;
 		}
 		var me = this;
+
+		// remove style attribut 'width' for th and td
+		var cells = $(me).find( 'th, td' );
+		for ( var i = 0; i < cells.length; i++ ) {
+			var style = cells[ i ].style;
+			if ( style.width ) {
+				style.width = '';
+
+			}
+		};
+
 		mw.loader.using( 'ext.bluespice.extjs' ).done( function() {
 			Ext.require( 'BS.ExportTables.menu.TableExport', function() {
 				var menu = new BS.ExportTables.menu.TableExport({
@@ -25,6 +36,7 @@
 			}, this);
 		});
 		e.preventDefault();
+
 		return false;
 	});
 
