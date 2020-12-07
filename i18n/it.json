@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"TheRukk"
 		]
 	},
 	"bs-exporttables-menu": "Esporta tabella",
-	"bs-exporttables-ve-exportable-option": "Esportabile"
+	"bs-exporttables-ve-exportable-option": "Esportabile",
+	"bs-exporttables-menu-csv": "Valori separati da virgola (CSV)"
 }
