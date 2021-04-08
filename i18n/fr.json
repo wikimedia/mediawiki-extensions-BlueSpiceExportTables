@@ -2,11 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"Verdy p",
 			"Wladek92"
 		]
 	},
 	"bs-exporttables-extension-description": "Permet l’exportation de tableaux vers Excel et CSV",
 	"bs-exporttables-menu": "Exporter le tableau",
 	"bs-exporttables-menu-csv": "Valeurs séparées par des virgules (CSV)",
-	"bs-exporttables-ve-exportable-option": "Exportable"
+	"bs-exporttables-ve-exportable-option": "Exportable",
+	"bs-exporttables-menu-xls": "Microsoft Office Excel 2003 (XLS)",
+	"bs-exporttables-menu-xlsx": "Microsoft Office Open XML (XLSX)"
 }
