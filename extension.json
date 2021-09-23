@@ -79,7 +79,9 @@
 				"bs-exporttables-menu",
 				"bs-exporttables-menu-csv",
 				"bs-exporttables-menu-xls",
-				"bs-exporttables-menu-xlsx"
+				"bs-exporttables-menu-xlsx",
+				"bs-exporttables-loading-text",
+				"bs-exporttables-loading-title"
 			]
 		},
 		"ext.bluespice.exportTables.visualEditorPlugin": {
