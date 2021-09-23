@@ -10,5 +10,7 @@
 	"bs-exporttables-menu-csv": "Label for menu entry that exports a table to csv. Should contain the file extension.\n{{Identical|Comma seperated values (CSV)}}",
 	"bs-exporttables-menu-xls": "{{optional}}\nLabel for menu entry that exports a table to xls. Should contain the file extension.\n{{Identical|Microsoft Office Excel 2003 (XLS)}}",
 	"bs-exporttables-menu-xlsx": "{{optional}}\nLabel for menu entry that exports a table to xlsx. Should contain the file extension.\n{{Identical|Microsoft Office Open XML (XLSX)}}",
-	"bs-exporttables-ve-exportable-option": "Label for visual editor table option for exportable tables"
+	"bs-exporttables-ve-exportable-option": "Label for visual editor table option for exportable tables",
+	"bs-exporttables-loading-text": "Message shown while table is being exported",
+	"bs-exporttables-loading-title": "Title for dialog shown while table is being exported"
 }
