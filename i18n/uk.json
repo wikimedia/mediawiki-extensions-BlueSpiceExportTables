@@ -10,5 +10,7 @@
 	"bs-exporttables-menu-csv": "Значення, через кому (CSV)",
 	"bs-exporttables-ve-exportable-option": "Експортабельна",
 	"bs-exporttables-menu-xls": "Microsoft Office Excel 2003 (XLS)",
-	"bs-exporttables-menu-xlsx": "Microsoft Office Open XML (XLSX)"
+	"bs-exporttables-menu-xlsx": "Microsoft Office Open XML (XLSX)",
+	"bs-exporttables-loading-text": "Будь ласка, поки генеруються дані експорту…",
+	"bs-exporttables-loading-title": "Експорт таблиці"
 }
