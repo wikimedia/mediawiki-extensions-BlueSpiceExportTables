@@ -11,5 +11,7 @@
 	"bs-exporttables-menu-csv": "Valeurs séparées par des virgules (CSV)",
 	"bs-exporttables-menu-xls": "Microsoft Office Excel 2003 (XLS)",
 	"bs-exporttables-menu-xlsx": "Microsoft Office Open XML (XLSX)",
-	"bs-exporttables-ve-exportable-option": "Exportable"
+	"bs-exporttables-ve-exportable-option": "Exportable",
+	"bs-exporttables-loading-text": "Veuillez patienter pendant que les données d’exportation sont générées…",
+	"bs-exporttables-loading-title": "Exportation du tableau"
 }
