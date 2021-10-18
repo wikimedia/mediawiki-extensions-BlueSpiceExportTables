@@ -3,11 +3,13 @@
 		"authors": [
 			"Crowley666",
 			"Lakejason0",
+			"LaoShuBaby",
 			"沈澄心"
 		]
 	},
 	"bs-exporttables-extension-description": "允许将表格导出为Excel和CSV",
 	"bs-exporttables-menu": "导出表格",
 	"bs-exporttables-menu-csv": "逗号分隔值（CSV）",
-	"bs-exporttables-ve-exportable-option": "可导出"
+	"bs-exporttables-ve-exportable-option": "可导出",
+	"bs-exporttables-loading-title": "导出表格"
 }
