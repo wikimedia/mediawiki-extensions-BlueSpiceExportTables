@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Okras"
+		]
+	},
+	"bs-exporttables-menu": "Экспортировать таблицу",
+	"bs-exporttables-menu-csv": "Значения, разделённые запятыми (CSV)"
+}
