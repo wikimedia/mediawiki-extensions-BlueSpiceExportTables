@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Mglaser",
 			"Patric Wirth"
 		]
 	},
@@ -10,5 +11,7 @@
 	"bs-exporttables-menu-xls": "Microsoft Office Excel 2003 (XLS)",
 	"bs-exporttables-menu-xlsx": "Microsoft Office Open XML (XLSX)",
 	"bs-exporttables-exportable": "Exportierbar",
-	"bs-exporttables-ve-exportable-option": "Exportierbar"
+	"bs-exporttables-ve-exportable-option": "Exportierbar",
+	"bs-exporttables-loading-text": "Bitte warte, während deine Daten gesammelt werden...",
+	"bs-exporttables-loading-title": "Tabellenexport"
 }
