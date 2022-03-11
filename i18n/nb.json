@@ -8,5 +8,6 @@
 	"bs-exporttables-menu": "Eksporter tabell",
 	"bs-exporttables-menu-csv": "Kommaseparerte verdier (CSV)",
 	"bs-exporttables-ve-exportable-option": "Kan eksporteres",
-	"bs-exporttables-loading-title": "Tabelleksport"
+	"bs-exporttables-loading-title": "Tabelleksport",
+	"bs-exporttables-loading-text": "Vent mens eksporteringsdataene genereres …"
 }
