@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"DiegoAmbrocio"
 		]
 	},
+	"bs-exporttables-extension-description": "Permite exportar las tablas a Excel y CSV",
 	"bs-exporttables-menu": "Exportar tabla",
-	"bs-exporttables-menu-csv": "Valores separados por comas (CSV)"
+	"bs-exporttables-menu-csv": "Valores separados por comas (CSV)",
+	"bs-exporttables-ve-exportable-option": "Exportable"
 }
