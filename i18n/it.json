@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"TheRukk"
+			"TheRukk",
+			"GpieroMW"
 		]
 	},
+	"bs-exporttables-extension-description": "Consente di esportare le tabelle in Excel e CSV",
 	"bs-exporttables-menu": "Esporta tabella",
 	"bs-exporttables-menu-csv": "Valori separati da virgola (CSV)",
 	"bs-exporttables-ve-exportable-option": "Esportabile"
