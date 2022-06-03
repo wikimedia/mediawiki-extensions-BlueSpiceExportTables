@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"TheRukk",
-			"GpieroMW"
+			"GpieroMW",
+			"TheRukk"
 		]
 	},
 	"bs-exporttables-extension-description": "Consente di esportare le tabelle in Excel e CSV",
 	"bs-exporttables-menu": "Esporta tabella",
 	"bs-exporttables-menu-csv": "Valori separati da virgola (CSV)",
-	"bs-exporttables-ve-exportable-option": "Esportabile"
+	"bs-exporttables-ve-exportable-option": "Esportabile",
+	"bs-exporttables-loading-text": "Attendere mentre vengono generati i dati per l'esportazione..."
 }

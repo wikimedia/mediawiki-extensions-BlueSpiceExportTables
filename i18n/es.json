@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido",
-			"DiegoAmbrocio"
+			"DiegoAmbrocio",
+			"Fitoschido"
 		]
 	},
 	"bs-exporttables-extension-description": "Permite exportar las tablas a Excel y CSV",
