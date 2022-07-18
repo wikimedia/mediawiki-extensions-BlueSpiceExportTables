@@ -3,7 +3,8 @@
 		"authors": [
 			"DDPAT",
 			"Ice bulldog",
-			"Piramidion"
+			"Piramidion",
+			"Ата"
 		]
 	},
 	"bs-exporttables-extension-description": "Дозволяє експортувати таблиці в Excel та CSV",
@@ -12,6 +13,6 @@
 	"bs-exporttables-menu-xls": "Microsoft Office Excel 2003 (XLS)",
 	"bs-exporttables-menu-xlsx": "Microsoft Office Open XML (XLSX)",
 	"bs-exporttables-ve-exportable-option": "Експортабельна",
-	"bs-exporttables-loading-text": "Будь ласка, поки генеруються дані експорту…",
+	"bs-exporttables-loading-text": "Будь ласка, зачекайте, поки генеруються дані експорту…",
 	"bs-exporttables-loading-title": "Експорт таблиці"
 }
