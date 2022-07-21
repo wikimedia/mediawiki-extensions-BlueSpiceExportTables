@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Duke of Wikipädia",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Juan90264"
@@ -10,6 +11,6 @@
 	"bs-exporttables-menu": "exportação de tabela",
 	"bs-exporttables-menu-csv": "Valores separados por vírgula (CSV)",
 	"bs-exporttables-ve-exportable-option": "Exportável",
-	"bs-exporttables-loading-text": "Por favor, enquanto os dados de exportação estão sendo gerados...",
+	"bs-exporttables-loading-text": "Por favor, aguarde enquanto os dados de exportação estão sendo gerados...",
 	"bs-exporttables-loading-title": "Exportação de tabela"
 }
