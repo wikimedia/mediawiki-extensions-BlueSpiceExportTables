@@ -8,5 +8,6 @@
 	"bs-exporttables-extension-description": "Maakt het mogelijk tabellen naar Excel en CSV te exporteren",
 	"bs-exporttables-menu": "Tabel exporteren",
 	"bs-exporttables-menu-csv": "kommagescheiden bestand (CSV)",
-	"bs-exporttables-ve-exportable-option": "Exporteerbaar"
+	"bs-exporttables-ve-exportable-option": "Exporteerbaar",
+	"bs-exporttables-loading-title": "Tabellenexport"
 }
