@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kly"
+			"Kly",
+			"Lakejason0"
 		]
 	},
 	"bs-exporttables-extension-description": "允許匯出表格成 Excel 與 CSV",
 	"bs-exporttables-menu": "匯出表格",
 	"bs-exporttables-menu-csv": "逗號分隔值（CSV）",
 	"bs-exporttables-ve-exportable-option": "可匯出",
-	"bs-exporttables-loading-text": "當產生匯出資料時請稍待…",
+	"bs-exporttables-loading-text": "正在產生匯出資料，請稍候…",
 	"bs-exporttables-loading-title": "表格匯出"
 }
