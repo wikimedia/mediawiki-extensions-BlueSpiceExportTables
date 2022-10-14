@@ -31,6 +31,11 @@
 			"PluginModules": [
 				"ext.bluespice.exportTables.visualEditorPlugin"
 			]
+		},
+		"BlueSpiceExtendedStatistics": {
+			"PluginModules": [
+				"ext.bluespice.exportTables.statistics"
+			]
 		}
 	},
 	"MessagesDirs": {
@@ -90,6 +95,17 @@
 			],
 			"messages": [
 				"bs-exporttables-ve-exportable-option"
+			]
+		},
+		"ext.bluespice.exportTables.statistics": {
+			"scripts": [
+				"bluespice.exportTables.exportButton.statistics.js"
+			],
+			"messages": [
+				"bs-exporttables-statistics-btn-text"
+			],
+			"dependencies": [
+				"ext.bluespice.oojs"
 			]
 		}
 	},
