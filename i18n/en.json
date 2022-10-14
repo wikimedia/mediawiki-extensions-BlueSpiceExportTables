@@ -11,5 +11,6 @@
 	"bs-exporttables-menu-xlsx": "Microsoft Office Open XML (XLSX)",
 	"bs-exporttables-ve-exportable-option": "Exportable",
 	"bs-exporttables-loading-text": "Please wait while export data is being generated...",
-	"bs-exporttables-loading-title": "Table export"
+	"bs-exporttables-loading-title": "Table export",
+	"bs-exporttables-statistics-btn-text": "Export"
 }
