@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"דגש",
-			"דגש חזק"
+			"דגש חזק",
+			"Amire80"
 		]
 	},
+	"bs-exporttables-extension-description": "מאפשרת יצוא של טבלאות ל־Excel ול־CSV",
 	"bs-exporttables-menu": "טבלת יצוא",
+	"bs-exporttables-menu-csv": "ערכים מופרדים בפסיקים (CSV)",
 	"bs-exporttables-ve-exportable-option": "ניתן ליצוא"
 }
