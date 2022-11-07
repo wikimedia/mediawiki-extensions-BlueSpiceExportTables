@@ -10,5 +10,6 @@
 	"bs-exporttables-menu-csv": "Valores separados por vírgula (CSV)",
 	"bs-exporttables-ve-exportable-option": "Exportável",
 	"bs-exporttables-loading-text": "Aguarde enquanto os dados para exportação estão a ser gerados, por favor...",
-	"bs-exporttables-loading-title": "Exportação de tabela"
+	"bs-exporttables-loading-title": "Exportação de tabela",
+	"bs-exporttables-statistics-btn-text": "Exportar"
 }
