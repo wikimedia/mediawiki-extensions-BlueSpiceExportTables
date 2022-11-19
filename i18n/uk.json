@@ -4,6 +4,7 @@
 			"DDPAT",
 			"Ice bulldog",
 			"Piramidion",
+			"Vlad5250",
 			"Ата"
 		]
 	},
@@ -14,5 +15,6 @@
 	"bs-exporttables-menu-xls": "Microsoft Office Excel 2003 (XLS)",
 	"bs-exporttables-menu-xlsx": "Microsoft Office Open XML (XLSX)",
 	"bs-exporttables-loading-text": "Будь ласка, зачекайте, поки генеруються дані експорту…",
-	"bs-exporttables-loading-title": "Експорт таблиці"
+	"bs-exporttables-loading-title": "Експорт таблиці",
+	"bs-exporttables-statistics-btn-text": "Експортувати"
 }
