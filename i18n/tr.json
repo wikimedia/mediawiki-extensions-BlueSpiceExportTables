@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
-			"Can"
+			"Can",
+			"ToprakM"
 		]
 	},
 	"bs-exporttables-extension-description": "Tabloların Excel ve CSV'ye dışa aktarılmasını sağlar",
 	"bs-exporttables-menu": "Tabloyu dışa aktar",
 	"bs-exporttables-menu-csv": "Virgülle ayrılmış değerler (CSV)",
 	"bs-exporttables-ve-exportable-option": "Dışa aktarabilir",
-	"bs-exporttables-loading-text": "Lütfen dışa aktarılan veri oluşturulurken bekleyin..."
+	"bs-exporttables-loading-text": "Lütfen dışa aktarılan veri oluşturulurken bekleyin...",
+	"bs-exporttables-statistics-btn-text": "Dışa aktar"
 }
