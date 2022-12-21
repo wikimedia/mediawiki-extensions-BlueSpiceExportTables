@@ -8,6 +8,7 @@
 	"bs-exporttables-menu": "Esporte 'a tabbelle",
 	"bs-exporttables-menu-csv": "Valore separate da virgole (CSV)",
 	"bs-exporttables-ve-exportable-option": "Esportabbele",
-	"bs-exporttables-loading-text": "Pe piacere aspitte mendre ca le date esportate tune avène generate...",
-	"bs-exporttables-loading-title": "Esporte 'a tabbelle"
+	"bs-exporttables-loading-text": "Pe piacere aspitte mendre ca le date esportate avène generate...",
+	"bs-exporttables-loading-title": "Esporte 'a tabbelle",
+	"bs-exporttables-statistics-btn-text": "Esporte"
 }
