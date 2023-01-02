@@ -4,5 +4,11 @@
 			"Eleassar"
 		]
 	},
+	"bs-exporttables-extension-description": "Omogoča izvoz tabel v Excel in CSV",
+	"bs-exporttables-menu": "Izvozi tabelo",
+	"bs-exporttables-menu-csv": "Vrednosti, ločene z vejico (CSV)",
+	"bs-exporttables-ve-exportable-option": "Izvozno",
+	"bs-exporttables-loading-text": "Počakajte, da se ustvarijo izvozni podatki ...",
+	"bs-exporttables-loading-title": "Izvoz tabele",
 	"bs-exporttables-statistics-btn-text": "Izvozi"
 }
