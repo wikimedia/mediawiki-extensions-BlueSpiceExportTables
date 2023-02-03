@@ -2,9 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"A2y4",
-			"MathXplore"
+			"MathXplore",
+			"背番号4のエース"
 		]
 	},
 	"bs-exporttables-menu-csv": "CSV",
-	"bs-exporttables-statistics-btn-text": "エクスポート"
+	"bs-exporttables-statistics-btn-text": "エクスポート",
+	"bs-exporttables-extension-description": "テーブルを ExcelおよびCSVにエクスポートできます",
+	"bs-exporttables-menu": "書き出し失敗",
+	"bs-exporttables-ve-exportable-option": "輸出可能",
+	"bs-exporttables-loading-text": "エクスポート データを生成しています。しばらくお待ちください",
+	"bs-exporttables-loading-title": "テーブルのエクスポート"
 }
