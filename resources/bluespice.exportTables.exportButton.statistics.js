@@ -52,7 +52,8 @@
 			var exportButton = new OO.ui.ButtonWidget( {
 				id: 'export-statistics',
 				label: mw.message( 'bs-exporttables-statistics-btn-text' ).text(),
-				icon: 'expand'
+				icon: 'expand',
+				tabIndex: 0
 			} );
 			$( '#statistic-selector' ).after( exportButton.$element );
 			if ( data.length === 0 ) {
@@ -73,6 +74,7 @@
 				if ( !$button.hasClass( 'oo-ui-widget-enabled') ) {
 					$button.removeClass( 'oo-ui-widget-disabled' );
 					$button.addClass( 'oo-ui-widget-enabled' );
+					$button[0].tabIndex = 0;
 
 					var $icon = $( $button.children()[0] ).children()[0];
 					if ( $( $icon ).hasClass( 'oo-ui-image-invert' ) ) {
