@@ -67,12 +67,6 @@
 				"bs-exporttables-menu-xlsx"
 			]
 		},
-		"ext.bluespice.exportTables.CRUDGridPanel.button.styles": {
-			"styles": [
-				"bluespice.exportTables.less"
-			],
-			"class": "\\BlueSpice\\ResourceModule\\LessVars"
-		},
 		"ext.bluespice.exportTables.CRUDGridPanel.button": {
 			"dependencies": [
 				"mediawiki.util"
