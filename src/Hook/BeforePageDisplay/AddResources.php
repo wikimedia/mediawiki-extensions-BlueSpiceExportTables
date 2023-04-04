@@ -6,9 +6,6 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 
 	protected function doProcess() {
 		$this->out->addModuleStyles(
-			'ext.bluespice.exportTables.CRUDGridPanel.button.styles'
-		);
-		$this->out->addModuleStyles(
 			'ext.bluespice.exportTables.contentTables.styles'
 		);
 		$this->out->addModules(
