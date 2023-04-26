@@ -15,21 +15,24 @@ Ext.define( 'BS.ExportTables.menu.TableExport', {
 				text: mw.message('bs-exporttables-menu-csv').plain(),
 				exportMode: 'csv',
 				handler: this.onMenuItemClick,
-				scope: this
+				scope: this,
+				tabIndex: 1
 			},
 			{
 				iconCls: 'icon-xls',
 				text: mw.message('bs-exporttables-menu-xls').plain(),
 				exportMode: 'xls',
 				handler: this.onMenuItemClick,
-				scope: this
+				scope: this,
+				tabIndex: 1
 			},
 			{
 				iconCls: 'icon-xlsx',
 				text: mw.message('bs-exporttables-menu-xlsx').plain(),
 				exportMode: 'xlsx',
 				handler: this.onMenuItemClick,
-				scope: this
+				scope: this,
+				tabIndex: 1
 			}
 		];
 

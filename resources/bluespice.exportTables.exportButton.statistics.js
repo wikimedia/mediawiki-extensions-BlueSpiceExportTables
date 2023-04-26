@@ -84,20 +84,24 @@
 			}
 		}
 
-		$( '#export-statistics' ).on( 'click', function( e ) {
-			var $button = $( e.currentTarget );
-			mw.loader.using( 'ext.bluespice.extjs' ).done( function() {
-				Ext.require( 'BS.ExportTables.menu.TableExport', function() {
+		function handleExportStatisticsEvent(e) {
+			var $button = $(e.currentTarget);
+			mw.loader.using('ext.bluespice.extjs').done(function () {
+				Ext.require('BS.ExportTables.menu.TableExport', function () {
 					var menu = new BS.ExportTables.menu.TableExport({
-						htmlTableProvider: _makeHTMLTableProvider( data )
+						htmlTableProvider: _makeHTMLTableProvider(data),
 					});
 
 					xPos = $button.offset().left;
-					yPos = $button.offset().top + $button.height()
-					menu.showAt( xPos, yPos );
+					yPos = $button.offset().top + $button.height();
+					menu.showAt(xPos, yPos);
+					menu.focus(menu.items[0]);
 				}, this);
 			});
-		} );
+		}
+
+		$('#export-statistics').on('click', handleExportStatisticsEvent);
+		$('#export-statistics').on('keypress', handleExportStatisticsEvent);
 	} );
 
 }( mediaWiki ) );
