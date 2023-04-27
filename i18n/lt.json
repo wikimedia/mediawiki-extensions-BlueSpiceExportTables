@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"bs-exporttables-extension-description": "Leidžia eksportuoti lenteles į Excel ir CSV",
+	"bs-exporttables-menu": "Eksportuoti lentelę",
+	"bs-exporttables-menu-csv": "Kableliais atskirtos reikšmės (CSV)",
+	"bs-exporttables-ve-exportable-option": "Eksportuotina",
+	"bs-exporttables-loading-text": "Palaukite, kol generuojami eksporto duomenys...",
+	"bs-exporttables-loading-title": "Lentelės eksportas",
+	"bs-exporttables-statistics-btn-text": "Eksportuoti"
+}
