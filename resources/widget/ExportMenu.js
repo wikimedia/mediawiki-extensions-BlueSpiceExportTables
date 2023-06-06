@@ -9,13 +9,19 @@ bs.exportTables.ExportMenu = function ( config ) {
 
 	var modes = $.extend( {
 		csv:  {
-			label: mw.message('bs-exporttables-menu-csv').plain()
+			label: mw.message('bs-exporttables-menu-csv').plain(),
+			classes: ['export-button'],
+			icon: 'csv'
 		},
 		xls:  {
-			label: mw.message('bs-exporttables-menu-xls').plain()
+			label: mw.message('bs-exporttables-menu-xls').plain(),
+			classes: ['export-button'],
+			icon: 'xls'
 		},
 		xlsx: {
-			label: mw.message('bs-exporttables-menu-xlsx').plain()
+			label: mw.message('bs-exporttables-menu-xlsx').plain(),
+			classes: ['export-button'],
+			icon: 'xlsx'
 		}
 	}, config.exportModes || {} );
 	this.init( modes );
