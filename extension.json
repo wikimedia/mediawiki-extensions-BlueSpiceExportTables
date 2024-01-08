@@ -9,10 +9,10 @@
 	],
 	"descriptionmsg": "bs-exporttables-extension-description",
 	"requires": {
-		"MediaWiki": ">= 1.36.0",
+		"MediaWiki": ">= 1.39.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 4.1",
-			"BlueSpiceUEModuleTable2Excel": ">= 4.1"
+			"BlueSpiceFoundation": ">= 4.3",
+			"BlueSpiceUEModuleTable2Excel": ">= 4.3"
 		}
 	},
 	"type": "bluespice",
