@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Okras"
+			"Okras",
+			"Yurina Tatiana"
 		]
 	},
+	"bs-exporttables-extension-description": "Позволяет экспортировать таблицы в Excel и CSV.",
 	"bs-exporttables-menu": "Экспортировать таблицу",
-	"bs-exporttables-menu-csv": "Значения, разделённые запятыми (CSV)"
+	"bs-exporttables-menu-csv": "Значения, разделённые запятыми (CSV)",
+	"bs-exporttables-loading-title": "Экспорт таблицы",
+	"bs-exporttables-statistics-btn-text": "Экспорт"
 }
