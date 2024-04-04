@@ -56,14 +56,26 @@
 		"ext.bluespice.exportTables.main": {
 			"dependencies": [
 				"ext.bluespice",
-				"mediawiki.util",
 				"oojs-ui"
 			],
 			"scripts": [
-				"bluespice.exportTables.CRUDGridPanel.button.js",
 				"widget/ExportMenu.js",
 				"bluespice.exportTables.oojs.js",
 				"bluespice.exportTables.contentTables.js"
+			],
+			"messages": [
+				"bs-exporttables-menu",
+				"bs-exporttables-menu-csv",
+				"bs-exporttables-menu-xls",
+				"bs-exporttables-menu-xlsx"
+			]
+		},
+		"ext.bluespice.exportTables.CRUDGridPanel.button": {
+			"dependencies": [
+				"mediawiki.util"
+			],
+			"scripts": [
+				"bluespice.exportTables.CRUDGridPanel.button.js"
 			],
 			"messages": [
 				"bs-exporttables-menu",
