@@ -2,15 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"דגש",
-			"דגש חזק"
+			"\u05d3\u05d2\u05e9",
+			"\u05d3\u05d2\u05e9 \u05d7\u05d6\u05e7"
 		]
 	},
-	"bs-exporttables-menu": "טבלת יצוא",
-	"bs-exporttables-ve-exportable-option": "ניתן ליצוא",
-	"bs-exporttables-extension-description": "מאפשרת יצוא של טבלאות ל־Excel ול־CSV",
-	"bs-exporttables-menu-csv": "ערכים מופרדים בפסיקים (CSV)",
-	"bs-exporttables-loading-text": "נא להמתין בזמן יצירת נתוני היצוא...",
-	"bs-exporttables-loading-title": "יצוא טבלה",
-	"bs-exporttables-statistics-btn-text": "יצוא"
+	"bs-exporttables-menu": "\u05d8\u05d1\u05dc\u05ea \u05d9\u05e6\u05d5\u05d0",
+	"bs-exporttables-ve-exportable-option": "\u05e0\u05d9\u05ea\u05df \u05dc\u05d9\u05e6\u05d5\u05d0",
+	"bs-exporttables-extension-description": "\u05de\u05d0\u05e4\u05e9\u05e8\u05ea \u05d9\u05e6\u05d5\u05d0 \u05e9\u05dc \u05d8\u05d1\u05dc\u05d0\u05d5\u05ea \u05dc\u05beExcel \u05d5\u05dc\u05beCSV",
+	"bs-exporttables-menu-csv": "\u05e2\u05e8\u05db\u05d9\u05dd \u05de\u05d5\u05e4\u05e8\u05d3\u05d9\u05dd \u05d1\u05e4\u05e1\u05d9\u05e7\u05d9\u05dd (CSV)",
+	"bs-exporttables-loading-text": "\u05e0\u05d0 \u05dc\u05d4\u05de\u05ea\u05d9\u05df \u05d1\u05d6\u05de\u05df \u05d9\u05e6\u05d9\u05e8\u05ea \u05e0\u05ea\u05d5\u05e0\u05d9 \u05d4\u05d9\u05e6\u05d5\u05d0...",
+	"bs-exporttables-loading-title": "\u05d9\u05e6\u05d5\u05d0 \u05d8\u05d1\u05dc\u05d4",
+	"bs-exporttables-statistics-btn-text": "\u05d9\u05e6\u05d5\u05d0"
 }
