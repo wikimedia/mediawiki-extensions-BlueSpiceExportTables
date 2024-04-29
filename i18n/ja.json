@@ -3,14 +3,14 @@
 		"authors": [
 			"A2y4",
 			"MathXplore",
-			"背番号4のエース"
+			"\u80cc\u756a\u53f74\u306e\u30a8\u30fc\u30b9"
 		]
 	},
 	"bs-exporttables-menu-csv": "CSV",
-	"bs-exporttables-statistics-btn-text": "エクスポート",
-	"bs-exporttables-extension-description": "テーブルを ExcelおよびCSVにエクスポートできます",
-	"bs-exporttables-menu": "書き出し失敗",
-	"bs-exporttables-ve-exportable-option": "輸出可能",
-	"bs-exporttables-loading-text": "エクスポート データを生成しています。しばらくお待ちください",
-	"bs-exporttables-loading-title": "テーブルのエクスポート"
+	"bs-exporttables-statistics-btn-text": "\u30a8\u30af\u30b9\u30dd\u30fc\u30c8",
+	"bs-exporttables-extension-description": "\u30c6\u30fc\u30d6\u30eb\u3092 Excel\u304a\u3088\u3073CSV\u306b\u30a8\u30af\u30b9\u30dd\u30fc\u30c8\u3067\u304d\u307e\u3059",
+	"bs-exporttables-menu": "\u66f8\u304d\u51fa\u3057\u5931\u6557",
+	"bs-exporttables-ve-exportable-option": "\u8f38\u51fa\u53ef\u80fd",
+	"bs-exporttables-loading-text": "\u30a8\u30af\u30b9\u30dd\u30fc\u30c8 \u30c7\u30fc\u30bf\u3092\u751f\u6210\u3057\u3066\u3044\u307e\u3059\u3002\u3057\u3070\u3089\u304f\u304a\u5f85\u3061\u304f\u3060\u3055\u3044",
+	"bs-exporttables-loading-title": "\u30c6\u30fc\u30d6\u30eb\u306e\u30a8\u30af\u30b9\u30dd\u30fc\u30c8"
 }
