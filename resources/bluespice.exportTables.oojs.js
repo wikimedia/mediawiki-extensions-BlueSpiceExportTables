@@ -14,6 +14,8 @@ mw.hook( 'oojsplus.grid.init' ).add( function( grid, cfg ) {
 	var exportTool = new OO.ui.PopupButtonWidget( {
 		icon: 'download',
 		framed: false,
+		label: mw.message( 'bs-exporttables-oojs-btn-aria-label' ).text(),
+		invisibleLabel: true,
 		popup: {
 			$content: panel.$element,
 			padded: false,
