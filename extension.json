@@ -67,7 +67,8 @@
 				"bs-exporttables-menu",
 				"bs-exporttables-menu-csv",
 				"bs-exporttables-menu-xls",
-				"bs-exporttables-menu-xlsx"
+				"bs-exporttables-menu-xlsx",
+				"bs-exporttables-oojs-btn-aria-label"
 			]
 		},
 		"ext.bluespice.exportTables.CRUDGridPanel.button": {
