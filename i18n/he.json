@@ -6,11 +6,12 @@
 			"דגש חזק"
 		]
 	},
-	"bs-exporttables-menu": "טבלת יצוא",
-	"bs-exporttables-ve-exportable-option": "ניתן ליצוא",
 	"bs-exporttables-extension-description": "מאפשרת יצוא של טבלאות ל־Excel ול־CSV",
+	"bs-exporttables-menu": "טבלת יצוא",
 	"bs-exporttables-menu-csv": "ערכים מופרדים בפסיקים (CSV)",
+	"bs-exporttables-ve-exportable-option": "ניתן ליצוא",
 	"bs-exporttables-loading-text": "נא להמתין בזמן יצירת נתוני היצוא...",
 	"bs-exporttables-loading-title": "יצוא טבלה",
-	"bs-exporttables-statistics-btn-text": "יצוא"
+	"bs-exporttables-statistics-btn-text": "יצוא",
+	"bs-exporttables-oojs-btn-aria-label": "יצוא"
 }

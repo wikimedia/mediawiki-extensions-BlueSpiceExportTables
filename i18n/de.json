@@ -3,7 +3,8 @@
 		"authors": [
 			"Mglaser",
 			"Patric Wirth",
-			"Umherirrender"
+			"Umherirrender",
+			"Justman10000"
 		]
 	},
 	"bs-exporttables-extension-description": "Ermöglicht den Export von Tabellen zu Excel oder CSV",
@@ -12,5 +13,6 @@
 	"bs-exporttables-ve-exportable-option": "Exportierbar",
 	"bs-exporttables-loading-text": "Bitte warte, während deine Daten gesammelt werden …",
 	"bs-exporttables-loading-title": "Tabellenexport",
-	"bs-exporttables-statistics-btn-text": "Exportieren"
+	"bs-exporttables-statistics-btn-text": "Exportieren",
+	"bs-exporttables-oojs-btn-aria-label": "Exportieren"
 }
