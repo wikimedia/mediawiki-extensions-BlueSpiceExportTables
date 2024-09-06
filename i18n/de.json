@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Justman10000",
 			"Mglaser",
 			"Patric Wirth",
-			"Umherirrender",
-			"Justman10000"
+			"Umherirrender"
 		]
 	},
 	"bs-exporttables-extension-description": "Ermöglicht den Export von Tabellen zu Excel oder CSV",
