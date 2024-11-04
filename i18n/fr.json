@@ -3,7 +3,8 @@
 		"authors": [
 			"Gomoko",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Mahabarata"
 		]
 	},
 	"bs-exporttables-extension-description": "Permet l’exportation de tableaux vers Excel et CSV",
@@ -14,5 +15,6 @@
 	"bs-exporttables-ve-exportable-option": "Exportable",
 	"bs-exporttables-loading-text": "Veuillez patienter pendant que les données d’exportation sont générées...",
 	"bs-exporttables-loading-title": "Exportation de tableau",
-	"bs-exporttables-statistics-btn-text": "Exporter"
+	"bs-exporttables-statistics-btn-text": "Exporter",
+	"bs-exporttables-oojs-btn-aria-label": "Exporter"
 }
