@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"Mahabarata",
 			"Verdy p",
-			"Wladek92",
-			"Mahabarata"
+			"Wladek92"
 		]
 	},
 	"bs-exporttables-extension-description": "Permet l’exportation de tableaux vers Excel et CSV",
