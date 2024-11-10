@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"Mahabarata",
 			"Verdy p",
 			"Wladek92"
 		]
@@ -14,5 +15,6 @@
 	"bs-exporttables-ve-exportable-option": "Exportable",
 	"bs-exporttables-loading-text": "Veuillez patienter pendant que les données d’exportation sont générées...",
 	"bs-exporttables-loading-title": "Exportation de tableau",
-	"bs-exporttables-statistics-btn-text": "Exporter"
+	"bs-exporttables-statistics-btn-text": "Exporter",
+	"bs-exporttables-oojs-btn-aria-label": "Exporter"
 }
