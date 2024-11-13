@@ -11,5 +11,6 @@
 	"bs-exporttables-ve-exportable-option": "Exporteerbaar",
 	"bs-exporttables-loading-text": "Even geduld a.u.b. terwijl de exportgegevens worden samengesteld…",
 	"bs-exporttables-loading-title": "Tabellenexport",
-	"bs-exporttables-statistics-btn-text": "Exporteren"
+	"bs-exporttables-statistics-btn-text": "Exporteren",
+	"bs-exporttables-oojs-btn-aria-label": "Exporteren"
 }
