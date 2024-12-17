@@ -60,6 +60,7 @@
 			],
 			"scripts": [
 				"widget/ExportMenu.js",
+				"widget/GridExportMenu.js",
 				"bluespice.exportTables.oojs.js",
 				"bluespice.exportTables.contentTables.js"
 			],
@@ -69,22 +70,6 @@
 				"bs-exporttables-menu-xls",
 				"bs-exporttables-menu-xlsx",
 				"bs-exporttables-oojs-btn-aria-label"
-			]
-		},
-		"ext.bluespice.exportTables.CRUDGridPanel.button": {
-			"dependencies": [
-				"mediawiki.util"
-			],
-			"scripts": [
-				"bluespice.exportTables.CRUDGridPanel.button.js"
-			],
-			"messages": [
-				"bs-exporttables-menu",
-				"bs-exporttables-menu-csv",
-				"bs-exporttables-menu-xls",
-				"bs-exporttables-menu-xlsx",
-				"bs-exporttables-loading-text",
-				"bs-exporttables-loading-title"
 			]
 		},
 		"ext.bluespice.exportTables.visualEditorPlugin": {

@@ -1,25 +1,4 @@
 ( function ( mw ) {
-
-	function _makeHTMLTableProvider( data ) {
-		return {
-			getHTMLTable: function() {
-				var dfd = $.Deferred();
-				html = '<table>';
-				data.forEach(row => {
-					entry = '<tr>';
-					elements = row.split( ',' );
-					elements.forEach( element => {
-						entry += '<td>' + element + '</td>';
-					} );
-					entry += '<tr>';
-					html += entry;
-				});
-				dfd.resolve( html );
-				return dfd;
-			}
-		};
-	}
-
 	function _convertToCsvArray( originData ) {
 		if ( originData.length === 0 ) {
 			return [];
@@ -46,62 +25,44 @@
 	}
 
 	mw.hook( 'aggregatedstatistics.addUI' ).add( function ( data ) {
-		var $button =  $('#export-statistics');
 		data = _convertToCsvArray( data );
-		if ( $button.length === 0 ) {
-			var exportButton = new OO.ui.ButtonWidget( {
-				id: 'export-statistics',
-				label: mw.message( 'bs-exporttables-statistics-btn-text' ).text(),
-				icon: 'expand',
-				tabIndex: 0
-			} );
-			$( '#statistic-selector' ).after( exportButton.$element );
-			if ( data.length === 0 ) {
-				exportButton.setDisabled( true );
+		var menu = new bs.exportTables.ExportMenu( {
+			dataProvider: function() {
+				const dfd = $.Deferred();
+				let html = '<table>';
+				data.forEach(row => {
+					let entry = '<tr>';
+					let elements = row.split( ',' );
+					elements.forEach( element => {
+						entry += '<td>' + element + '</td>';
+					} );
+					entry += '<tr>';
+					html += entry;
+				});
+				dfd.resolve( html );
+				return dfd;
 			}
-		} else {
-			if ( data.length === 0 ) {
-				if ( !$button.hasClass( 'oo-ui-widget-disabled') ) {
-					$button.removeClass( 'oo-ui-widget-enabled' );
-					$button.addClass( 'oo-ui-widget-disabled' );
+		} );
 
-					var $icon = $( $button.children()[0] ).children()[0];
-					if ( !$( $icon ).hasClass( 'oo-ui-image-invert' ) ) {
-						$( $icon ).addClass( 'oo-ui-image-invert' );
-					}
-				}
-			} else {
-				if ( !$button.hasClass( 'oo-ui-widget-enabled') ) {
-					$button.removeClass( 'oo-ui-widget-disabled' );
-					$button.addClass( 'oo-ui-widget-enabled' );
-					$button[0].tabIndex = 0;
+		var panel = new OO.ui.PanelLayout( { padded: true, expanded: false } );
+		panel.$element.append( menu.$element );
 
-					var $icon = $( $button.children()[0] ).children()[0];
-					if ( $( $icon ).hasClass( 'oo-ui-image-invert' ) ) {
-						$( $icon ).removeClass( 'oo-ui-image-invert' );
-					}
-				}
+		var exportTool = new OO.ui.PopupButtonWidget( {
+			icon: 'download',
+			indicator: 'down',
+			framed: true,
+			flags:[ 'primary', 'progressive' ],
+			label: mw.message( 'bs-exporttables-statistics-btn-text' ).text(),
+			tabIndex: 0,
+			popup: {
+				$content: panel.$element,
+				padded: false,
+				autoFlip: true,
+				verticalPosition: 'top'
 			}
-		}
-
-		function handleExportStatisticsEvent(e) {
-			var $button = $(e.currentTarget);
-			mw.loader.using('ext.bluespice.extjs').done(function () {
-				Ext.require('BS.ExportTables.menu.TableExport', function () {
-					var menu = new BS.ExportTables.menu.TableExport({
-						htmlTableProvider: _makeHTMLTableProvider(data),
-					});
-
-					xPos = $button.offset().left;
-					yPos = $button.offset().top + $button.height();
-					menu.showAt(xPos, yPos);
-					menu.focus(menu.items[0]);
-				}, this);
-			});
-		}
-
-		$('#export-statistics').on('click', handleExportStatisticsEvent);
-		$('#export-statistics').on('keypress', handleExportStatisticsEvent);
+		} );
+		exportTool.setDisabled( data.length === 0 );
+		$( '#statistic-selector' ).after( exportTool.$element );
 	} );
 
 }( mediaWiki ) );
