@@ -3,7 +3,7 @@ mw.hook( 'oojsplus.grid.init' ).add( function( grid, cfg ) {
 	if ( !exportable ) {
 		return;
 	}
-	var menu = new bs.exportTables.ExportMenu( {
+	var menu = new bs.exportTables.GridExportMenu( {
 		grid: grid,
 		dataProvider: cfg.provideExportData || false
 	} );

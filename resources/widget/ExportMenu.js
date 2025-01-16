@@ -4,7 +4,6 @@ window.bs.exportTables = window.bs.exportTables || {};
 bs.exportTables.ExportMenu = function ( config ) {
 	// Parent constructor
 	bs.exportTables.ExportMenu.super.call( this, config );
-	this.grid = config.grid;
 	this.dataProvider = config.dataProvider || false;
 
 	var modes = $.extend( {
@@ -56,19 +55,15 @@ bs.exportTables.ExportMenu.prototype.addMenuItem = function( key, data ) {
 };
 
 bs.exportTables.ExportMenu.prototype.export = function( mode ) {
+	const dfd = $.Deferred();
 	if ( !mode ) {
-		return;
+		return dfd.reject().promise();
 	}
-	this.grid.setLoading( true );
 	// Get the data to export:
 	// 1. Use cfg.provideExportData callback if passed in the grid config, or
 	// 2. Use providerExportData function of the grid, if available, or
 	// 3. Fallback to local function
-	this.dataPromise =
-		typeof this.dataProvider === 'function' ? this.dataProvider() :
-			typeof this.grid.provideExportData === 'function' ? this.grid.provideExportData() :
-				this.provideDataTable();
-
+	this.dataPromise = this.provideDataTable();
 	this.dataPromise.done( function( $table ) {
 		var url = mw.util.getUrl( 'Special:UniversalExport/' + mw.config.get('wgPageName'), {
 			'ue[module]': 'table2excel'
@@ -88,16 +83,18 @@ bs.exportTables.ExportMenu.prototype.export = function( mode ) {
 		this.$element.append( formLayout.$element );
 		formLayout.$element.submit();
 		formLayout.$element.remove();
-		this.grid.setLoading( false );
+		dfd.resolve();
 	}.bind( this ) ).fail( function() {
 		console.error( 'Failed to retrieve data for export' );
-		this.grid.setLoading( false );
+		dfd.reject();
 	}.bind( this ) );
+
+	return dfd.promise();
 };
 
 bs.exportTables.ExportMenu.prototype.provideDataTable = function() {
-	var $dfd = $.Deferred(),
-		$tmp = $( '<div>' ).append( this.grid.$table.clone() );
-	$dfd.resolve( $tmp.html() );
-	return $dfd.promise();
+	if ( !this.dataProvider ) {
+		return $.Deferred().reject().promise();
+	}
+	return this.dataProvider();
 };
