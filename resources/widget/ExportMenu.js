@@ -65,25 +65,25 @@ bs.exportTables.ExportMenu.prototype.export = function( mode ) {
 	// 3. Fallback to local function
 	this.dataPromise = this.provideDataTable();
 	this.dataPromise.done( function( $table ) {
-		var url = mw.util.getUrl( 'Special:UniversalExport/' + mw.config.get('wgPageName'), {
-			'ue[module]': 'table2excel'
-		} );
+		this.download( mode, $table )
+		.done( async ( response, statusText, jqXHR ) => {
+			const filename = jqXHR.getResponseHeader( 'X-Filename' ) || mw.config.get( 'wgPageName' ) + '.pdf';
 
-		var formElements = [
-			new OO.ui.HiddenInputWidget( { name: 'ModeFrom', value: 'html' } ),
-			new OO.ui.HiddenInputWidget( { name: 'ModeTo', value: mode } ),
-			new OO.ui.HiddenInputWidget( { name: 'content', value: $table } ),
-		];
+			const url = window.URL.createObjectURL( response );
+			const a = document.createElement( 'a' );
+			a.href = url;
+			a.download = filename;
+			document.body.appendChild( a );
+			a.click();
+			a.remove();
 
-		var formLayout = new OO.ui.FormLayout( {
-			items: formElements,
-			action: url,
-			method: 'post'
+			window.URL.revokeObjectURL( url );
+			dfd.resolve();
+		} )
+		.fail( () => {
+			console.error( 'Failed to download data for export' );
+			dfd.reject();
 		} );
-		this.$element.append( formLayout.$element );
-		formLayout.$element.submit();
-		formLayout.$element.remove();
-		dfd.resolve();
 	}.bind( this ) ).fail( function() {
 		console.error( 'Failed to retrieve data for export' );
 		dfd.reject();
@@ -97,4 +97,39 @@ bs.exportTables.ExportMenu.prototype.provideDataTable = function() {
 		return $.Deferred().reject().promise();
 	}
 	return this.dataProvider();
+};
+
+bs.exportTables.ExportMenu.prototype.download = function( mode, data ) {
+	data = data || {};
+	const dfd = $.Deferred();
+	$.ajax( {
+		method: 'POST',
+		url: this.getURL( mode ),
+		data: JSON.stringify( { data: { 'content': data } } ),
+		contentType: 'application/json',
+		accept: 'application/' + mode,
+		xhrFields: {
+			responseType: 'blob' // Explicitly handle binary data as a Blob
+		}
+	} ).done( ( response, statusText, jqXHR ) => {
+		if ( typeof response === 'object' && response.success === false ) {
+			dfd.reject();
+			return;
+		}
+		dfd.resolve( response, statusText, jqXHR );
+	} ).fail( ( jgXHR, type, status ) => {
+		console.error( jgXHR, type, status );
+		if ( type === 'error' ) {
+			dfd.reject( {
+				error: jgXHR.responseJSON || jgXHR.responseText
+			} );
+		}
+		dfd.reject( { type: type, status: status } );
+	} );
+
+	return dfd.promise();
+};
+
+bs.exportTables.ExportMenu.prototype.getURL = function( mode ) {
+	return mw.util.wikiScript( 'rest' ) + '/table2excel/' + mode;
 };
