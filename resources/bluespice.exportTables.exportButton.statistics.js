@@ -24,7 +24,7 @@
 		return csvArray;
 	}
 
-	mw.hook( 'aggregatedstatistics.addUI' ).add( ( data ) => {
+	function _createExportTool( data ) { // eslint-disable-line no-underscore-dangle
 		data = _convertToCsvArray( data );
 		const menu = new bs.exportTables.ExportMenu( {
 			dataProvider: function () {
@@ -62,7 +62,15 @@
 			}
 		} );
 		exportTool.setDisabled( data.length === 0 );
-		$( '#statistic-selector' ).after( exportTool.$element );
+
+		return exportTool;
+	}
+
+	mw.hook( 'aggregatedstatistics.addUI' ).add( ( data ) => {
+		const exportTool = _createExportTool( data );
+		const $selector = $( '#statistic-selector' );
+		$selector.next( '.export-tool' ).remove();
+		$selector.after( exportTool.$element.addClass( 'export-tool' ) );
 	} );
 
 }( mediaWiki ) );
