@@ -74,7 +74,7 @@
 		},
 		"ext.bluespice.exportTables.visualEditorPlugin": {
 			"scripts": [
-				"visualEditor/ui/plugin/ExportableOption.js"
+				"bs.exptbl/ui/plugin/ExportableOption.js"
 			],
 			"messages": [
 				"bs-exporttables-ve-exportable-option"
