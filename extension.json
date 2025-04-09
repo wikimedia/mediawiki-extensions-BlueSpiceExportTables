@@ -106,7 +106,12 @@
 		}
 	},
 	"Hooks": {
-		"BeforePageDisplay": "\\BlueSpice\\ExportTables\\Hook\\BeforePageDisplay\\AddResources::callback"
+		"BeforePageDisplay": "addResources"
+	},
+	"HookHandlers": {
+		"addResources": {
+			"class": "BlueSpice\\ExportTables\\HookHandlers\\BeforePageDisplay\\AddResources"
+		}
 	},
 	"manifest_version": 2
 }
