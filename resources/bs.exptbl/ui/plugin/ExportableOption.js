@@ -1,7 +1,7 @@
 bs.util.registerNamespace( 'bs.exptbl.ui.plugin' );
 
 // extend document model
-ve.dm.MWTableNode.static.classAttributes['bs-exportable'] = { exportable: true };
+ve.dm.MWTableNode.static.classAttributes[ 'bs-exportable' ] = { exportable: true };
 
 bs.exptbl.ui.plugin.ExportableOption = function BsExptblUiExportableOption( config ) {
 	bs.exptbl.ui.plugin.ExportableOption.super.call( this, config );
@@ -9,11 +9,9 @@ bs.exptbl.ui.plugin.ExportableOption = function BsExptblUiExportableOption( conf
 
 OO.inheritClass( bs.exptbl.ui.plugin.ExportableOption, bs.vec.ui.plugin.MWTableDialog );
 
-bs.exptbl.ui.plugin.ExportableOption.prototype.initialize = function() {
-	var exportableField;
-
+bs.exptbl.ui.plugin.ExportableOption.prototype.initialize = function () {
 	this.component.exportableToggle = new OO.ui.ToggleSwitchWidget();
-	exportableField = new OO.ui.FieldLayout( this.component.exportableToggle, {
+	const exportableField = new OO.ui.FieldLayout( this.component.exportableToggle, {
 		align: 'left',
 		label: ve.msg( 'bs-exporttables-ve-exportable-option' )
 	} );
@@ -22,15 +20,15 @@ bs.exptbl.ui.plugin.ExportableOption.prototype.initialize = function() {
 	this.component.panel.$element.append( exportableField.$element );
 };
 
-bs.exptbl.ui.plugin.ExportableOption.prototype.getValues = function( values ) {
+bs.exptbl.ui.plugin.ExportableOption.prototype.getValues = function ( values ) {
 	return ve.extendObject( values, {
 		exportable: this.component.exportableToggle.getValue()
 	} );
 };
 
-bs.exptbl.ui.plugin.ExportableOption.prototype.getSetupProcess = function( parentProcess, data ) {
-	parentProcess.next( function(){
-		var tableNode = this.component.getFragment().getSelection().getTableNode( this.component.getFragment().document ),
+bs.exptbl.ui.plugin.ExportableOption.prototype.getSetupProcess = function ( parentProcess, data ) { // eslint-disable-line no-unused-vars
+	parentProcess.next( function () {
+		const tableNode = this.component.getFragment().getSelection().getTableNode( this.component.getFragment().document ),
 			exportable = !!tableNode.getAttribute( 'exportable' );
 
 		this.component.exportableToggle.setValue( exportable );
@@ -42,9 +40,9 @@ bs.exptbl.ui.plugin.ExportableOption.prototype.getSetupProcess = function( paren
 	return parentProcess;
 };
 
-bs.exptbl.ui.plugin.ExportableOption.prototype.getActionProcess = function( parentProcess, action ) {
-	parentProcess.next( function(){
-		var surfaceModel, fragment;
+bs.exptbl.ui.plugin.ExportableOption.prototype.getActionProcess = function ( parentProcess, action ) {
+	parentProcess.next( function () {
+		let surfaceModel, fragment;
 		if ( action === 'done' ) {
 			surfaceModel = this.component.getFragment().getSurface();
 			fragment = surfaceModel.getLinearFragment(
@@ -60,7 +58,5 @@ bs.exptbl.ui.plugin.ExportableOption.prototype.getActionProcess = function( pare
 
 bs.vec.registerComponentPlugin(
 	bs.vec.components.TABLE_DIALOG,
-	function( component ) {
-		return new bs.exptbl.ui.plugin.ExportableOption( component );
-	}
+	( component ) => new bs.exptbl.ui.plugin.ExportableOption( component )
 );
