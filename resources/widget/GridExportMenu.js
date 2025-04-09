@@ -6,23 +6,23 @@ bs.exportTables.GridExportMenu = function ( config ) {
 	bs.exportTables.GridExportMenu.super.call( this, config );
 };
 
-OO.inheritClass( bs.exportTables.GridExportMenu, bs.exportTables.ExportMenu);
+OO.inheritClass( bs.exportTables.GridExportMenu, bs.exportTables.ExportMenu );
 
-bs.exportTables.GridExportMenu.prototype.export = function( mode ) {
+bs.exportTables.GridExportMenu.prototype.export = function ( mode ) {
 	this.grid.setLoading( true );
-	bs.exportTables.GridExportMenu.super.prototype.export.call( this, mode ).then( function () {
+	bs.exportTables.GridExportMenu.super.prototype.export.call( this, mode ).then( () => {
 		this.grid.setLoading( false );
-	}.bind( this ) );
+	} );
 };
 
-bs.exportTables.GridExportMenu.prototype.provideDataTable = function() {
+bs.exportTables.GridExportMenu.prototype.provideDataTable = function () {
 	if ( typeof this.dataProvider === 'function' ) {
 		return this.dataProvider();
 	}
 	if ( typeof this.grid.provideExportData === 'function' ) {
 		return this.grid.provideExportData();
 	}
-	var $dfd = $.Deferred(),
+	const $dfd = $.Deferred(),
 		$tmp = $( '<div>' ).append( this.grid.$table.clone() );
 	$dfd.resolve( $tmp.html() );
 	return $dfd.promise();

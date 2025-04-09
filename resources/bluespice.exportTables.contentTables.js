@@ -1,20 +1,20 @@
-$( function() {
-	var panel = null,
-		mode = 'button'; // 'button' or 'contextmenu
+$( () => {
+	let panel = null;
+	const mode = 'button'; // 'button' or 'contextmenu
 
-	function _removeMenu() {
+	function _removeMenu() { // eslint-disable-line no-underscore-dangle
 		if ( panel ) {
 			panel.$element.remove();
 			panel = null;
 		}
 	}
 
-	function _prepareTable( $table ) {
-		var $clone = $table.clone();
+	function _prepareTable( $table ) { // eslint-disable-line no-underscore-dangle
+		const $clone = $table.clone();
 		// remove style attribut 'width' for th and td
-		var cells = $clone.find( 'th, td' );
-		for ( var i = 0; i < cells.length; i++ ) {
-			var style = cells[ i ].style;
+		const $cells = $clone.find( 'th, td' );
+		for ( let i = 0; i < $cells.length; i++ ) {
+			const style = $cells[ i ].style;
 			if ( style.width ) {
 				style.width = '';
 
@@ -23,10 +23,10 @@ $( function() {
 		return $clone;
 	}
 
-	function _getMenu( $table ) {
+	function _getMenu( $table ) { // eslint-disable-line no-underscore-dangle
 		return new bs.exportTables.ExportMenu( {
-			dataProvider: function() {
-				var dfd = $.Deferred();
+			dataProvider: function () {
+				const dfd = $.Deferred();
 				dfd.resolve( '<table>' + $table.html() + '</table>' );
 				return dfd;
 			}
@@ -34,13 +34,13 @@ $( function() {
 	}
 
 	if ( mode === 'button' ) {
-		$( mw.config.get( 'bsgExportTablesMenuTargetSelector' ) ).each( function() {
-			var $table = $( this );
-			var $clone = _prepareTable( $table );
-			var menu = _getMenu( $clone );
+		$( mw.config.get( 'bsgExportTablesMenuTargetSelector' ) ).each( function () {
+			const $table = $( this );
+			const $clone = _prepareTable( $table );
+			const menu = _getMenu( $clone );
 			panel = new OO.ui.PanelLayout( { padded: true, expanded: false } );
 			panel.$element.append( menu.$element );
-			var exportTool = new OO.ui.PopupButtonWidget( {
+			const exportTool = new OO.ui.PopupButtonWidget( {
 				icon: 'download',
 				framed: false,
 				label: mw.message( 'bs-exporttables-menu' ).text(),
@@ -58,14 +58,14 @@ $( function() {
 			$table.find( 'tbody' ).after( exportTool.$element );
 		} );
 	} else if ( mode === 'contextmenu' ) {
-		$( document ).on( 'contextmenu', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function( e ) {
+		$( document ).on( 'contextmenu', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function ( e ) {
 			_removeMenu();
-			if( e.ctrlKey ) {
+			if ( e.ctrlKey ) {
 				return true;
 			}
-			var $table = $( this );
-			var $clone = _prepareTable( $table );
-			var menu = _getMenu( $clone );
+			const $table = $( this );
+			const $clone = _prepareTable( $table );
+			const menu = _getMenu( $clone );
 			panel = new OO.ui.PanelLayout( { padded: true, expanded: false } );
 			panel.$element.append( menu.$element );
 			panel.$element.css( 'background-color', 'white' );
@@ -82,14 +82,18 @@ $( function() {
 
 			return false;
 		} );
-		$( document ).on( 'click', function( e ) { _removeMenu(); } );
-		$( window ).scroll( function() { _removeMenu(); } );
+		$( document ).on( 'click', () => {
+			_removeMenu();
+		} );
+		$( window ).on( 'scroll', () => {
+			_removeMenu();
+		} );
 
-		$( document ).on( 'mouseover', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function( e ) {
-			$(this).addClass( 'bs-et-highlight' );
-		});
-		$( document ).on( 'mouseout', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function( e ) {
-			$(this).removeClass( 'bs-et-highlight' );
-		});
+		$( document ).on( 'mouseover', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function () {
+			$( this ).addClass( 'bs-et-highlight' );
+		} );
+		$( document ).on( 'mouseout', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function () {
+			$( this ).removeClass( 'bs-et-highlight' );
+		} );
 	}
 } );

@@ -1,17 +1,17 @@
-mw.hook( 'oojsplus.grid.init' ).add( function( grid, cfg ) {
-	var exportable = cfg.exportable || false;
+mw.hook( 'oojsplus.grid.init' ).add( ( grid, cfg ) => {
+	const exportable = cfg.exportable || false;
 	if ( !exportable ) {
 		return;
 	}
-	var menu = new bs.exportTables.GridExportMenu( {
+	const menu = new bs.exportTables.GridExportMenu( {
 		grid: grid,
 		dataProvider: cfg.provideExportData || false
 	} );
 
-	var panel = new OO.ui.PanelLayout( { padded: true, expanded: false } );
+	const panel = new OO.ui.PanelLayout( { padded: true, expanded: false } );
 	panel.$element.append( menu.$element );
 
-	var exportTool = new OO.ui.PopupButtonWidget( {
+	const exportTool = new OO.ui.PopupButtonWidget( {
 		icon: 'download',
 		framed: false,
 		label: mw.message( 'bs-exporttables-oojs-btn-aria-label' ).text(),
