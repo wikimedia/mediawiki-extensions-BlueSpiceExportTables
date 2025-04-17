@@ -46,6 +46,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\ExportTables\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\ExportTables\\Tests\\": "tests/phpunit/"
+	},
 	"ResourceModules": {
 		"ext.bluespice.exportTables.contentTables.styles": {
 			"styles": [
