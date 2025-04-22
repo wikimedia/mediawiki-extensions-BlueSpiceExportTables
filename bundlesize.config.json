@@ -2,5 +2,9 @@
 	{
 		"resourceModule": "ext.bluespice.exportTables.contentTables.styles",
 		"maxSize": "2.2 kB"
+	},
+	{
+		"resourceModule": "ext.bluespice.exportTables.main",
+		"maxSize": "2.1 kB"
 	}
 ]
