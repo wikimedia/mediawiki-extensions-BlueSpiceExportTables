@@ -59,6 +59,7 @@
 				"oojs-ui"
 			],
 			"scripts": [
+				"dialog/ExportProgress.js",
 				"widget/ExportMenu.js",
 				"bluespice.exportTables.oojs.js",
 				"bluespice.exportTables.contentTables.js"
@@ -68,7 +69,8 @@
 				"bs-exporttables-menu-csv",
 				"bs-exporttables-menu-xls",
 				"bs-exporttables-menu-xlsx",
-				"bs-exporttables-oojs-btn-aria-label"
+				"bs-exporttables-oojs-btn-aria-label",
+				"bs-exporttables-exportprogressdialog-content"
 			]
 		},
 		"ext.bluespice.exportTables.CRUDGridPanel.button": {

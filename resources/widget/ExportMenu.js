@@ -24,6 +24,7 @@ bs.exportTables.ExportMenu = function ( config ) {
 			icon: 'xlsx'
 		}
 	}, config.exportModes || {} );
+	this.showExportProgressDialog = config.showExportProgressDialog || false;
 	this.init( modes );
 };
 
@@ -60,6 +61,7 @@ bs.exportTables.ExportMenu.prototype.export = function( mode ) {
 		return;
 	}
 	this.grid.setLoading( true );
+	this.maybeShowProgressDialog();
 	// Get the data to export:
 	// 1. Use cfg.provideExportData callback if passed in the grid config, or
 	// 2. Use providerExportData function of the grid, if available, or
@@ -89,9 +91,11 @@ bs.exportTables.ExportMenu.prototype.export = function( mode ) {
 		formLayout.$element.submit();
 		formLayout.$element.remove();
 		this.grid.setLoading( false );
+		this.maybeHideProgressDialog();
 	}.bind( this ) ).fail( function() {
 		console.error( 'Failed to retrieve data for export' );
 		this.grid.setLoading( false );
+		this.maybeHideProgressDialog();
 	}.bind( this ) );
 };
 
@@ -100,4 +104,28 @@ bs.exportTables.ExportMenu.prototype.provideDataTable = function() {
 		$tmp = $( '<div>' ).append( this.grid.$table.clone() );
 	$dfd.resolve( $tmp.html() );
 	return $dfd.promise();
+};
+
+bs.exportTables.ExportMenu.prototype.maybeShowProgressDialog = function() {
+	if ( !this.showExportProgressDialog ) {
+		return;
+	}
+	this.progressDialog = new bs.exportTables.ExportProgressDialog( {
+		size: 'medium'
+	} );
+	const windowManager = new OO.ui.WindowManager();
+	$( document.body ).append( windowManager.$element );
+	windowManager.addWindows( [ this.progressDialog ] );
+	// Open the window!
+	windowManager.openWindow( this.progressDialog );
+};
+
+bs.exportTables.ExportMenu.prototype.maybeHideProgressDialog = function() {
+	if ( !this.progressDialog ) {
+		return;
+	}
+	setTimeout( () => {
+		// Make sure dialog doesn't flicker
+		this.progressDialog.close();
+	}, 1000 );
 };
