@@ -5,7 +5,8 @@ mw.hook( 'oojsplus.grid.init' ).add( function( grid, cfg ) {
 	}
 	var menu = new bs.exportTables.ExportMenu( {
 		grid: grid,
-		dataProvider: cfg.provideExportData || false
+		dataProvider: cfg.provideExportData || false,
+		showExportProgressDialog: cfg.showExportProgressDialog || false
 	} );
 
 	var panel = new OO.ui.PanelLayout( { padded: true, expanded: false } );

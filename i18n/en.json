@@ -13,5 +13,6 @@
 	"bs-exporttables-loading-text": "Please wait while export data is being generated...",
 	"bs-exporttables-loading-title": "Table export",
 	"bs-exporttables-statistics-btn-text": "Export",
-	"bs-exporttables-oojs-btn-aria-label": "Export"
+	"bs-exporttables-oojs-btn-aria-label": "Export",
+	"bs-exporttables-exportprogressdialog-content": "Please wait while the export data is being generated. This may take a while depending on the size of the dataset."
 }
