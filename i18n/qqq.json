@@ -16,5 +16,6 @@
 	"bs-exporttables-loading-text": "Message shown while table is being exported",
 	"bs-exporttables-loading-title": "Title for dialog shown while table is being exported",
 	"bs-exporttables-statistics-btn-text": "Label for button to export data",
-	"bs-exporttables-oojs-btn-aria-label": "Invisible label for export button in grid"
+	"bs-exporttables-oojs-btn-aria-label": "Invisible label for export button in grid",
+	"bs-exporttables-exportprogressdialog-content": "Message shown while table is being exported"
 }
