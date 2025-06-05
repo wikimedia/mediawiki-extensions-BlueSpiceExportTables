@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-exporttables-extension-description": "Lehetővé teszi a táblázatok exportálását Excelbe és CSV-be",
+	"bs-exporttables-menu": "Export tábla",
+	"bs-exporttables-menu-csv": "Vesszővel elválasztott értékek (CSV)",
+	"bs-exporttables-ve-exportable-option": "Exportálható",
+	"bs-exporttables-loading-text": "Kérjük, várj, amíg az exportálandó adatok generálása folyamatban van...",
+	"bs-exporttables-loading-title": "Táblázat exportálása",
+	"bs-exporttables-statistics-btn-text": "Exportálás",
+	"bs-exporttables-oojs-btn-aria-label": "Exportálás"
+}
