@@ -55,7 +55,7 @@ $( () => {
 				}
 			} );
 			$table.addClass( 'bsg-export-table' );
-			$table.find( 'tbody' ).after( exportTool.$element );
+			$table.find( 'tbody' ).last().after( exportTool.$element );
 		} );
 	} else if ( mode === 'contextmenu' ) {
 		$( document ).on( 'contextmenu', mw.config.get( 'bsgExportTablesMenuTargetSelector' ), function ( e ) {
