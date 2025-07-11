@@ -5,5 +5,7 @@
 		]
 	},
 	"bs-exporttables-menu": "Экспорйе таблица",
-	"bs-exporttables-statistics-btn-text": "Экспорт"
+	"bs-exporttables-statistics-btn-text": "Экспорт",
+	"bs-exporttables-loading-title": "Таблицин экспорт",
+	"bs-exporttables-oojs-btn-aria-label": "Экспорт"
 }
