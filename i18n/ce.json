@@ -7,5 +7,6 @@
 	"bs-exporttables-menu": "Экспорйе таблица",
 	"bs-exporttables-statistics-btn-text": "Экспорт",
 	"bs-exporttables-loading-title": "Таблицин экспорт",
-	"bs-exporttables-oojs-btn-aria-label": "Экспорт"
+	"bs-exporttables-oojs-btn-aria-label": "Экспорт",
+	"bs-exporttables-extension-description": "Таблицаш Excel а, CSV а тӀе экспорт йан аьтто бо."
 }
