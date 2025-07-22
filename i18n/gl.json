@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"bs-exporttables-extension-description": "Permite a exportación de táboas a Excel e CSV",
+	"bs-exporttables-menu": "Exportar a táboa",
+	"bs-exporttables-menu-csv": "Valores separados por comas (CSV)",
+	"bs-exporttables-ve-exportable-option": "Exportable",
+	"bs-exporttables-loading-text": "Agarda mentres se xeran os datos de exportación...",
+	"bs-exporttables-loading-title": "Exportación de táboa",
+	"bs-exporttables-statistics-btn-text": "Exportar",
+	"bs-exporttables-oojs-btn-aria-label": "Exportar"
+}
