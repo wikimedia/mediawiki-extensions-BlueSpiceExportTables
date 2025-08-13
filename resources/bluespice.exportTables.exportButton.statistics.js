@@ -11,9 +11,10 @@
 					elements.forEach( element => {
 						entry += '<td>' + element + '</td>';
 					} );
-					entry += '<tr>';
+					entry += '</tr>';
 					html += entry;
 				});
+				html += '</table>';
 				dfd.resolve( html );
 				return dfd;
 			}
