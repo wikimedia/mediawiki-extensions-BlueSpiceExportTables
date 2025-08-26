@@ -1,9 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
+	"bs-exporttables-extension-description": "Erlaabt et Tabellen als Excel oder CSV z'exportéieren",
 	"bs-exporttables-menu": "Tabell exportéieren",
-	"bs-exporttables-ve-exportable-option": "Exportéierbar"
+	"bs-exporttables-ve-exportable-option": "Exportéierbar",
+	"bs-exporttables-loading-text": "Waart wgl., wärend d'Exportdonnéeë generéiert ginn…",
+	"bs-exporttables-loading-title": "Tabellenexport",
+	"bs-exporttables-statistics-btn-text": "Exportéieren",
+	"bs-exporttables-oojs-btn-aria-label": "Exportéieren"
 }
