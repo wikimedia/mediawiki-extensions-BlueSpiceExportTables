@@ -6,10 +6,10 @@
 			"Stefan2255"
 		]
 	},
-	"bs-exporttables-menu": "Exportera tabell",
-	"bs-exporttables-ve-exportable-option": "Exporterbar",
 	"bs-exporttables-extension-description": "Tillåter export av tabeller till Excel och CSV",
+	"bs-exporttables-menu": "Exportera tabell",
 	"bs-exporttables-menu-csv": "Kommaavgränsade värden (CSV)",
+	"bs-exporttables-ve-exportable-option": "Exporterbar",
 	"bs-exporttables-loading-text": "Vänta medan exportdata genereras...",
 	"bs-exporttables-loading-title": "Tabellexport",
 	"bs-exporttables-statistics-btn-text": "Exportera",
