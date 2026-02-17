@@ -11,7 +11,7 @@
 	"bs-exporttables-menu": "Tabelle exportieren",
 	"bs-exporttables-menu-csv": "Kommaseparierte Liste (CSV)",
 	"bs-exporttables-ve-exportable-option": "Exportierbar",
-	"bs-exporttables-loading-text": "Bitte warte, während deine Daten gesammelt werden …",
+	"bs-exporttables-loading-text": "Bitte {{#FORMAL:warte|warten Sie}}, während {{#FORMAL:deine|Ihre}} Daten gesammelt werden …",
 	"bs-exporttables-loading-title": "Tabellenexport",
 	"bs-exporttables-statistics-btn-text": "Exportieren",
 	"bs-exporttables-oojs-btn-aria-label": "Exportieren"
