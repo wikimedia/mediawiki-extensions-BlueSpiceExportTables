@@ -11,5 +11,6 @@
 	"bs-exporttables-ve-exportable-option": "可匯出",
 	"bs-exporttables-loading-text": "正在產生匯出資料，請稍候…",
 	"bs-exporttables-loading-title": "表格匯出",
-	"bs-exporttables-statistics-btn-text": "匯出"
+	"bs-exporttables-statistics-btn-text": "匯出",
+	"bs-exporttables-oojs-btn-aria-label": "匯出"
 }

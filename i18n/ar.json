@@ -11,5 +11,6 @@
 	"bs-exporttables-ve-exportable-option": "قابل للتصدير",
 	"bs-exporttables-loading-text": "الرجاء الانتظار بينما يتم إنشاء بيانات التصدير ...",
 	"bs-exporttables-loading-title": "تصدير الجدول",
-	"bs-exporttables-statistics-btn-text": "تصدير"
+	"bs-exporttables-statistics-btn-text": "تصدير",
+	"bs-exporttables-oojs-btn-aria-label": "تصدير"
 }

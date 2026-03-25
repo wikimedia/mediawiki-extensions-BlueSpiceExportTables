@@ -11,5 +11,6 @@
 	"bs-exporttables-ve-exportable-option": "Kan eksporteres",
 	"bs-exporttables-loading-text": "Vennligst vent mens eksporteringsdataene genereres …",
 	"bs-exporttables-loading-title": "Tabelleksport",
-	"bs-exporttables-statistics-btn-text": "Eksporter"
+	"bs-exporttables-statistics-btn-text": "Eksporter",
+	"bs-exporttables-oojs-btn-aria-label": "Eksporter"
 }

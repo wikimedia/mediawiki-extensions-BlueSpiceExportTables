@@ -12,5 +12,6 @@
 	"bs-exporttables-menu-csv": "ערכים מופרדים בפסיקים (CSV)",
 	"bs-exporttables-loading-text": "נא להמתין בזמן יצירת נתוני היצוא...",
 	"bs-exporttables-loading-title": "יצוא טבלה",
-	"bs-exporttables-statistics-btn-text": "יצוא"
+	"bs-exporttables-statistics-btn-text": "יצוא",
+	"bs-exporttables-oojs-btn-aria-label": "יצוא"
 }
