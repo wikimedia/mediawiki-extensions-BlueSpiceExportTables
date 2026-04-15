@@ -16,5 +16,6 @@
 	"bs-exporttables-ve-exportable-option": "Експортабельна",
 	"bs-exporttables-loading-text": "Будь ласка, зачекайте, поки генеруються дані експорту…",
 	"bs-exporttables-loading-title": "Експорт таблиці",
-	"bs-exporttables-statistics-btn-text": "Експортувати"
+	"bs-exporttables-statistics-btn-text": "Експортувати",
+	"bs-exporttables-oojs-btn-aria-label": "Експортувати"
 }
