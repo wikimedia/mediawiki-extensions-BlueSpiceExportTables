@@ -99,6 +99,7 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceExportTables/resources"
 	},
+	"ForeignResourcesDir": "resources/lib",
 	"config_prefix": "bsg",
 	"config": {
 		"ExportTablesMenuTargetSelector": {
