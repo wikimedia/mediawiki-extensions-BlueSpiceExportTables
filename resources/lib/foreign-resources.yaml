@@ -1,0 +1,15 @@
+famfamfam-silk:
+  license: CC-BY-2.5
+  homepage: https://github.com/legacy-icons/famfamfam-silk
+  authors: Mark James
+  version: 1.0.0
+  purl: pkg:npm/famfamfam-silk@1.0.0
+  type: tar
+  src: https://registry.npmjs.org/famfamfam-silk/-/famfamfam-silk-1.0.0.tgz
+  integrity: sha384-jCkj7SmuDRNkmTQRcQa8n+he9B6qHUp2NW1UPCCQK5ruhuJaxAgJ0PcULrbvHoVE
+  dest:
+    package/dist/png/page_excel.png:
+    package/dist/png/page_white_excel.png:
+    package/dist/png/table.png:
+    package/LICENSE.md:
+    package/README.md:
