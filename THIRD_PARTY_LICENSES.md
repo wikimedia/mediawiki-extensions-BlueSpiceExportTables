@@ -7,7 +7,7 @@ Images
 
 | Image | Author | Version | License |
 |:--------|:-------|:--------|:-------|
-| [Famfamfam Silk Icon set 1.3](http://www.famfamfam.com/lab/icons/silk/) | Mark James | 1.3 | [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/) |
+| [Famfamfam Silk Icon set](https://github.com/legacy-icons/famfamfam-silk) | Mark James | 1.0.0 | [CC-BY 2.5](https://creativecommons.org/licenses/by/2.5/) |
 
 License texts
 =============
