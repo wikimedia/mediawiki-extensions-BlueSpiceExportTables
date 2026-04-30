@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -8,5 +9,8 @@
 	"bs-exporttables-menu": "테이블 내보내기",
 	"bs-exporttables-menu-csv": "CSV",
 	"bs-exporttables-ve-exportable-option": "내보내기 가능",
-	"bs-exporttables-loading-title": "테이블 내보내기"
+	"bs-exporttables-loading-title": "테이블 내보내기",
+	"bs-exporttables-loading-text": "내보내기 데이터가 생성되는 동안 기다려 주십시오...",
+	"bs-exporttables-statistics-btn-text": "내보내기",
+	"bs-exporttables-oojs-btn-aria-label": "내보내기"
 }
