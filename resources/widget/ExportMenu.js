@@ -59,6 +59,11 @@ bs.exportTables.ExportMenu.prototype.export = function ( mode ) {
 	if ( !mode ) {
 		return dfd.reject().promise();
 	}
+
+	const progressDialog = new bs.exportTables.ExportProgressDialog();
+	OO.ui.getWindowManager().addWindows( [ progressDialog ] );
+	OO.ui.getWindowManager().openWindow( progressDialog );
+
 	// Get the data to export:
 	// 1. Use cfg.provideExportData callback if passed in the grid config, or
 	// 2. Use providerExportData function of the grid, if available, or
@@ -78,14 +83,15 @@ bs.exportTables.ExportMenu.prototype.export = function ( mode ) {
 				a.remove();
 
 				window.URL.revokeObjectURL( url );
+				progressDialog.close();
 				dfd.resolve();
 			} )
 			.fail( () => {
-				console.error( 'Failed to download data for export' ); // eslint-disable-line no-console
+				progressDialog.onError();
 				dfd.reject();
 			} );
 	} ).fail( () => {
-		console.error( 'Failed to retrieve data for export' ); // eslint-disable-line no-console
+		progressDialog.onError();
 		dfd.reject();
 	} );
 
