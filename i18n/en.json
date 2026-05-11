@@ -13,5 +13,6 @@
 	"bs-exporttables-loading-text": "Please wait while export data is being generated...",
 	"bs-exporttables-loading-title": "Table export",
 	"bs-exporttables-statistics-btn-text": "Export",
-	"bs-exporttables-oojs-btn-aria-label": "Export"
+	"bs-exporttables-oojs-btn-aria-label": "Export",
+	"bs-exporttables-export-error": "An error occurred while exporting the table. Please try again later."
 }
