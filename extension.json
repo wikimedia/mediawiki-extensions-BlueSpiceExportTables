@@ -62,6 +62,7 @@
 				"oojs-ui"
 			],
 			"scripts": [
+				"dialog/ExportProgress.js",
 				"widget/ExportMenu.js",
 				"widget/GridExportMenu.js",
 				"bluespice.exportTables.oojs.js",
@@ -72,7 +73,9 @@
 				"bs-exporttables-menu-csv",
 				"bs-exporttables-menu-xls",
 				"bs-exporttables-menu-xlsx",
-				"bs-exporttables-oojs-btn-aria-label"
+				"bs-exporttables-oojs-btn-aria-label",
+				"bs-exporttables-loading-text",
+				"bs-exporttables-export-error"
 			]
 		},
 		"ext.bluespice.exportTables.visualEditorPlugin": {
