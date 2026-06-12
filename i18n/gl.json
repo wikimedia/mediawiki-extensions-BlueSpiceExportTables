@@ -11,5 +11,6 @@
 	"bs-exporttables-loading-text": "Agarda mentres se xeran os datos de exportación...",
 	"bs-exporttables-loading-title": "Exportación de táboa",
 	"bs-exporttables-statistics-btn-text": "Exportar",
-	"bs-exporttables-oojs-btn-aria-label": "Exportar"
+	"bs-exporttables-oojs-btn-aria-label": "Exportar",
+	"bs-exporttables-export-error": "Produciuse un erro ao exportar a táboa. Inténtao de novo máis tarde."
 }
