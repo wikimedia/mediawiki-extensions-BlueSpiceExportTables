@@ -12,5 +12,6 @@
 	"bs-exporttables-loading-title": "테이블 내보내기",
 	"bs-exporttables-loading-text": "내보내기 데이터가 생성되는 동안 기다려 주십시오...",
 	"bs-exporttables-statistics-btn-text": "내보내기",
-	"bs-exporttables-oojs-btn-aria-label": "내보내기"
+	"bs-exporttables-oojs-btn-aria-label": "내보내기",
+	"bs-exporttables-export-error": "테이블을 내보내는 동안 오류가 발생했습니다. 나중에 다시 시도하세요."
 }
