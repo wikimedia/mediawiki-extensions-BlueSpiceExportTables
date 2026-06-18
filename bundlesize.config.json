@@ -5,6 +5,8 @@
 	},
 	{
 		"resourceModule": "ext.bluespice.exportTables.main",
-		"maxSize": "4 kB"
+		"maxSize": "4 kB",
+		"@note": "Ignore oojs-ui*",
+		"ignoreDependencies": true
 	}
 ]
