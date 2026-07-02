@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Crowley666",
+			"GuoPC",
 			"Lakejason0",
 			"LaoShuBaby",
 			"Tr jason",
@@ -16,5 +17,6 @@
 	"bs-exporttables-loading-text": "正在生成导出数据，请稍候……",
 	"bs-exporttables-loading-title": "导出表格",
 	"bs-exporttables-statistics-btn-text": "导出",
-	"bs-exporttables-oojs-btn-aria-label": "导出"
+	"bs-exporttables-oojs-btn-aria-label": "导出",
+	"bs-exporttables-export-error": "导出表格时出错。请稍后重试。"
 }
