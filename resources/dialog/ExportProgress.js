@@ -31,7 +31,7 @@ bs.exportTables.ExportProgressDialog.prototype.initialize = function () {
 };
 
 bs.exportTables.ExportProgressDialog.prototype.onError = function () {
-	const closeButton = new OO.ui.ButtonWidget( {
+	const closeButton = new OO.ui.ButtonWidget( { // eslint-disable-line mediawiki/no-unlabeled-buttonwidget
 		title: mw.message( 'bs-exporttables-close-button' ).text(),
 		icon: 'close',
 		framed: false
