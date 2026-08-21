@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-exporttables-extension-description": "Umožňuje export tabuliek do Excelu a CSV",
+	"bs-exporttables-menu": "Exportovať tabuľku",
+	"bs-exporttables-menu-csv": "Hodnoty oddelené čiarkou (CSV)",
+	"bs-exporttables-ve-exportable-option": "Exportovateľná",
+	"bs-exporttables-loading-text": "Počkajte, prosím, kým sa vygenerujú exportované údaje…",
+	"bs-exporttables-loading-title": "Export tabuľky",
+	"bs-exporttables-statistics-btn-text": "Exportovať",
+	"bs-exporttables-oojs-btn-aria-label": "Exportovať",
+	"bs-exporttables-export-error": "Pri exporte tabuľky nastala chyba. Skúste to, prosím, neskôr."
+}
