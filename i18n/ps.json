@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"bs-exporttables-extension-description": "اېکسېل او سي‌اېس‌وي ته د لښتيالونو بهرلېږلو ته اجازه ورکوي",
+	"bs-exporttables-menu": "لښتيال بهرلېږل",
+	"bs-exporttables-menu-csv": "کامې سره جلاشوي ارزښتونه (سي‌اېس‌وي)",
+	"bs-exporttables-ve-exportable-option": "بهرلېږلووړ",
+	"bs-exporttables-loading-text": "مهرباني وکړئ په تمه پاتې شئ؛ ترڅو د بهرلېږلو اومتوکي وزېږول شي...",
+	"bs-exporttables-loading-title": "لښتيال بهرلېږل",
+	"bs-exporttables-statistics-btn-text": "بهرلېږل",
+	"bs-exporttables-oojs-btn-aria-label": "بهرلېږل",
+	"bs-exporttables-export-error": "د لښتيال بهرلېږلو پرمهال تېروتنه رامنځته شوه. مهرباني وکړئ بيا هڅه وکړئ!"
+}
