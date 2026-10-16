@@ -16,5 +16,6 @@
 	"bs-exporttables-loading-text": "Veuillez patienter pendant que les données d’exportation sont générées...",
 	"bs-exporttables-loading-title": "Exportation de tableau",
 	"bs-exporttables-statistics-btn-text": "Exporter",
-	"bs-exporttables-oojs-btn-aria-label": "Exporter"
+	"bs-exporttables-oojs-btn-aria-label": "Exporter",
+	"bs-exporttables-export-error": "Une erreur s'est produite lors de l'export de la table. Veuillez réessayer plus tard."
 }
