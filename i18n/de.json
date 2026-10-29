@@ -3,6 +3,7 @@
 		"authors": [
 			"Justman10000",
 			"Mglaser",
+			"Mschlindwein",
 			"Patric Wirth",
 			"Umherirrender"
 		]
@@ -14,5 +15,6 @@
 	"bs-exporttables-loading-text": "Bitte {{#FORMAL:warte|warten Sie}}, während {{#FORMAL:deine|Ihre}} Daten gesammelt werden …",
 	"bs-exporttables-loading-title": "Tabellenexport",
 	"bs-exporttables-statistics-btn-text": "Exportieren",
-	"bs-exporttables-oojs-btn-aria-label": "Exportieren"
+	"bs-exporttables-oojs-btn-aria-label": "Exportieren",
+	"bs-exporttables-export-error": "Beim Exportieren der Tabelle ist ein Fehler aufgetreten. Bitte {{#FORMAL:versuche|versuchen Sie}} es später erneut."
 }
